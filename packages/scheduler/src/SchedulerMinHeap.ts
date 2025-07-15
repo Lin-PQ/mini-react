@@ -28,7 +28,6 @@ export function pop<T extends Node>(heap: Heap<T>): T | null {
   if (heap.length === 0) {
     return null;
   }
-
   const first = heap[0];
   const last = heap.pop();
   if (last && last !== first) {
